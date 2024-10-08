@@ -25,16 +25,16 @@ function getArchiveToken(url, id) {
 }
 
 function makeWidgetCode(token){
-    return `<link href="https://ressiwage.github.io/web/bs.isolated.css" rel="stylesheet">
-<link rel="stylesheet" href="https://ressiwage.github.io/web/stylesheet.css">
+    return `<link href="https://comexpprojects.github.io/web/bs.isolated.css" rel="stylesheet">
+<link rel="stylesheet" href="https://comexpprojects.github.io/web/stylesheet.css">
 
 <div id="comexp-login"></div>
 <div id="comexp-body" data-key="${token}"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/hash-wasm@4"></script>
-<script src="https://ressiwage.github.io/web/insertHtml.js"></script>
-<script src="https://ressiwage.github.io/web/setupArchivesMenu.js"></script>
-<script src="https://ressiwage.github.io/web/setupForms.js"></script>`
+<script src="https://comexpprojects.github.io/web/insertHtml.js"></script>
+<script src="https://comexpprojects.github.io/web/setupArchivesMenu.js"></script>
+<script src="https://comexpprojects.github.io/web/setupForms.js"></script>`
 }
 
 function getThumbnail(url) {
