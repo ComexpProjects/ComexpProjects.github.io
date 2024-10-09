@@ -1,7 +1,6 @@
 function deleteArchive(url, id) {
-    return fetch(url, {
+    return fetch(url+'?'+new URLSearchParams({'archive_id':id}), {
         method: 'DELETE',
-        body: JSON.stringify({'archive_id':id}),
         headers: {
             'archives-token': JSON.parse(localStorage.getItem('comexp-token')),
             'Accept': 'application/json',
