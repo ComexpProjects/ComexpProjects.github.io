@@ -1,5 +1,5 @@
 function deleteArchive(url, id) {
-    return fetch(url+'?'+new URLSearchParams({'archive_id':id}), {
+    return fetch(url+'/'+new String(id), {
         method: 'DELETE',
         headers: {
             'archives-token': JSON.parse(localStorage.getItem('comexp-token')),
