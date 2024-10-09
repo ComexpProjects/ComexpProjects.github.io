@@ -3,8 +3,8 @@ function deleteArchive(url, id) {
         method: 'DELETE',
         headers: {
             'archives-token': JSON.parse(localStorage.getItem('comexp-token')),
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            // 'Accept': 'application/json',
+            // 'Content-Type': 'application/json'
         }
     }
     )
