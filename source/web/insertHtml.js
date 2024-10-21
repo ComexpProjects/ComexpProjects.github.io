@@ -1,6 +1,6 @@
-const LOGIN_URL = 'https://api-dev.comexp.net/auth/login'
-const UPLOAD_VIDEO_URL = 'https://api-dev.comexp.net/upload_video_new'
-const CREATE_ARCHIVE_URL = 'https://api-dev.comexp.net/create_archive'
+const LOGIN_URL = '{{ apiUrl }}/auth/login'
+const UPLOAD_VIDEO_URL = '{{ apiUrl }}/upload_video_new'
+const CREATE_ARCHIVE_URL = '{{ apiUrl }}/create_archive'
 document.getElementById('comexp-login')===null?undefined:document.getElementById('comexp-login').innerHTML=`
 <iframe name="dummyframe" id="dummyframe" style="display:none"></iframe>
 <div class="bs-isolated">

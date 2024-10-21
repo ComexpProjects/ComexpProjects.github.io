@@ -16,7 +16,7 @@ async function loadArchives() {
     if (token === null) { return }
     ARCHIVE_SECTION.classList.remove('d-none');
     PLEASE_LOGIN.classList.add('d-none')
-    let response = await fetch('https://api-dev.comexp.net/get_archives_nested', {
+    let response = await fetch('{{ apiUrl }}/get_archives_nested', {
         headers: { 'archives-token': token }
     });
     if (response.ok) {

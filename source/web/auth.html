@@ -28,7 +28,7 @@
       </div>
       <h1 class="col-2 d-inline text-center align-middle">OR</h1>
       <div id="login" class="col-5">
-          <form action="https://api-dev.comexp.net/auth/login" method="post" target="dummyframe" id="loginform" class="form-centered">
+          <form action="{{ apiUrl }}/auth/login" method="post" target="dummyframe" id="loginform" class="form-centered">
               <input placeholder="email" type="text" name="email" id="email">
               <input placeholder="password" type="password" name="password" id="password">
               <input class="submit-button" id="submit" type="submit" value="LOGIN">
